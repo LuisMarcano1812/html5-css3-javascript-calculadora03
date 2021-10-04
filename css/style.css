@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: rgb(38, 83, 83);
+    font-family: Roboto;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+input[type=button],input[type="text"]{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+  }
+  
+  table,form{
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+ #simbolo{
+    background-color: rgb(198, 193, 212);
+ }
+
+ #simbolo2{
+    background-color: rgb(44, 17, 143);
+ }
+ 

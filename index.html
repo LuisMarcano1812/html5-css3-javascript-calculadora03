@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form name="fo">
+
+        <h1>Calculadora</h1>
+      
+        <table>
+      
+          <tr>
+            <td colspan="5"><input type="text" name="valores" id="valores" autocomplete="off" onkeypress="return solonumeros(event)"></td>
+          </tr>
+    
+          <tr>
+           <td colspan="2"><input type="button" id="simbolo" value="C" ondblclick="eliminar_todo()"></td>
+           <td><input type="button" id="simbolo" value="&larr;" onclick="eliminar()"></td>
+           <td><input type="button" id="simbolo" value="/" onclick="comprobar(value)"></td>
+          </tr>
+    
+          <tr>
+            <td><input type="button" value="7" onClick="retornar(value)"></td>
+            <td><input type="button" value="8" onClick="retornar(value)"></td>
+            <td><input type="button" value="9" onClick="retornar(value)"></td>
+            <td><input type="button" id="simbolo" value="*" onclick="comprobar(value)"></td>
+          </tr>
+      
+          <tr>
+            <td><input type="button" value="4" onClick="retornar(value)"></td>
+            <td><input type="button" value="5" onClick="retornar(value)"></td>
+            <td><input type="button" value="6" onClick="retornar(value)"></td>
+            <td><input type="button" id="simbolo" value="+" onclick="comprobar(value)"></td>
+          </tr>
+      
+          <tr>
+            <td><input type="button" value="1" onClick="retornar(value)"></td>
+            <td><input type="button" value="2" onClick="retornar(value)"></td>
+            <td><input type="button" value="3" onClick="retornar(value)"></td>
+            <td><input type="button" id="simbolo" value="-" onclick="comprobar(value)"></td>
+          </tr>
+      
+          <tr>
+            <td colspan="2"><input type="button" value="0" onClick="retornar(value)"></td>
+            <td colspan="3"><input type="button" id="simbolo2" value="=" onclick="calcular()"></td>
+          </tr>
+      
+        </table>
+      
+      </form>
+    
+      <script src="js/main.js"></script>
+</body>
+</html>
